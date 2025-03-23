@@ -7,18 +7,10 @@
     "home_page_url": "https://candle233.github.io",
     "items": [
         {
-            "id": "https://candle233.github.io/2025/03/23/for-testing/",
-            "url": "https://candle233.github.io/2025/03/23/for-testing/",
-            "title": "for testing",
-            "date_published": "2025-03-22T15:16:00.000Z",
-            "content_html": "<p>adding a picture<br />\n<img loading=\"lazy\" data-src=\"/images/pasted-0.png\" alt=\"upload successful\" /></p>\n",
-            "tags": []
-        },
-        {
             "id": "https://candle233.github.io/2025/03/22/test/",
             "url": "https://candle233.github.io/2025/03/22/test/",
             "title": "test",
-            "date_published": "2025-03-22T14:54:45.000Z",
+            "date_published": "2025-03-22T14:54:00.000Z",
             "content_html": "<p>nice to meet</p>\n",
             "tags": []
         },
