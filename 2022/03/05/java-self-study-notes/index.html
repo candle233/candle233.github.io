@@ -1,0 +1,289 @@
+<!-- build time:Mon Mar 24 2025 00:41:42 GMT+0900 (Japan Standard Time) --><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="alternate" href="/rss.xml" title="Huaji Blog" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="Huaji Blog" type="application/atom+xml"><link rel="alternate" type="application/json" title="Huaji Blog" href="https://candle233.github.io/feed.json"><link rel="preconnect" href="https://s4.zstatic.net"><link rel="preconnect" href="https://at.alicdn.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CFredericka%20the%20Great:400,400italic,700,700italic%7CNoto%20Serif%20JP:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CInconsolata:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/app.css?v=0.4.25"><link rel="modulepreload" href="/js/chunk-BVA3IQCV.js"><link rel="modulepreload" href="/js/chunk-D2KGL5SQ.js"><link rel="modulepreload" href="/js/chunk-GDFXZ3XX.js"><link rel="modulepreload" href="/js/chunk-WIQECBEN.js"><link rel="modulepreload" href="/js/chunk-WSB2NAPC.js"><link rel="modulepreload" href="/js/chunk-ZPJJ7MUW.js"><link rel="modulepreload" href="/js/comments-W26T4RI2.js"><link rel="modulepreload" href="/js/copy-tex-TXYSSFBT.js"><link rel="modulepreload" href="/js/index.esm-AHVJOIO5.js"><link rel="modulepreload" href="/js/post-N4BGB3K5.js"><link rel="modulepreload" href="/js/quicklink-MKCXBDPA.js"><link rel="modulepreload" href="/js/search-7ZTNFNLX.js"><link rel="modulepreload" href="/js/siteInit.js"><link rel="modulepreload" href="/js/waline-NVSVNCZW.js"><link rel="stylesheet" href="/css/comments-F4ZGS7LD.css" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/siteInit.css" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/waline-IDNZKML2.css" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="preload" href="https://s2.loli.net/2025/03/23/VuSkPXEdxhypjGv.png" as="image" fetchpriority="high"><link rel="preload" href="https://s2.loli.net/2025/03/23/YByQ2o19MFegjvd.png" as="image" fetchpriority="high"><link rel="preload" href="https://s2.loli.net/2025/03/23/u8I2tok3Gg4vZFz.png" as="image" fetchpriority="high"><link rel="preload" href="https://s2.loli.net/2025/03/23/D7xQMNCmis3wP9y.png" as="image" fetchpriority="high"><link rel="preload" href="https://s2.loli.net/2025/03/23/f4yE67GLFkcMoRI.png" as="image" fetchpriority="high"><link rel="preload" href="https://s2.loli.net/2025/03/23/9Ej81drVMDANTxz.png" as="image" fetchpriority="high"><meta name="keywords" content="计算机编程 | Java"><link rel="canonical" href="https://candle233.github.io/2022/03/05/java-self-study-notes/"><title>Java自学笔记</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">Java自学笔记</h1><div class="meta"><span class="item" title="Created: 2022-03-05 15:46:18"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">Posted on</span><time itemprop="dateCreated datePublished" datetime="2022-03-05T15:46:18+09:00">2022-03-05</time></span><span class="item" title="Symbols count in article"><span class="icon"><i class="ic i-pen"></i></span><span class="text">Symbols count in article</span><span>13k</span><span class="text">words</span></span><span class="item" title="Reading time"><span class="icon"><i class="ic i-clock"></i></span><span class="text">Reading time</span><span>11 mins.</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="Toggle navigation bar"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Welcome!</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><ul><li class="item" style="background-image:url(&quot;https://s2.loli.net/2025/03/23/VuSkPXEdxhypjGv.png&quot;)"></li><li class="item" style="background-image:url(&quot;https://s2.loli.net/2025/03/23/YByQ2o19MFegjvd.png&quot;)"></li><li class="item" style="background-image:url(&quot;https://s2.loli.net/2025/03/23/u8I2tok3Gg4vZFz.png&quot;)"></li><li class="item" style="background-image:url(&quot;https://s2.loli.net/2025/03/23/D7xQMNCmis3wP9y.png&quot;)"></li><li class="item" style="background-image:url(&quot;https://s2.loli.net/2025/03/23/f4yE67GLFkcMoRI.png&quot;)"></li><li class="item" style="background-image:url(&quot;https://s2.loli.net/2025/03/23/9Ej81drVMDANTxz.png&quot;)"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemlistelement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">Home</a></span><i class="ic i-angle-right"></i><span class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6CS/" itemprop="item" rel="index" title="In计算机科学CS"><span itemprop="name">计算机科学CS<meta itemprop="position" content="0"></span></a></span></div><article class="post block" itemscope itemtype="http://schema.org/Article" lang="en"><link itemprop="mainEntityOfPage" href="https://candle233.github.io/2022/03/05/java-self-study-notes/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.png"><meta itemprop="name" content="Huaji"><meta itemprop="description" content=", "></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Huaji Blog"></span><div class="body md" itemprop="articleBody"><h2 id="java的三大版本"><a class="anchor" href="#java的三大版本">#</a> Java 的三大版本：</h2><ol><li>JAVA SE：是 JAVA 的标准版，基础和核心，主要来学习的一个部分。也是 JAVAEE 和 JAVAME 技术的基础，主要用于开发桌面应用程序。可以做简单桌面应用如：扫雷，连连看等。</li><li>JAVA ME：JAVA 的微缩版，应用于嵌入式开发，比如手机程序开发。</li><li>JAVA EE：是 JAVA 的企业版，提供企业级应用开发的完整解决方案，比如开发网站，企业的应用系统，是 JAVA 技术应用最广泛的领域。偏向于 WEB 的开发。<br><img loading="lazy" data-src="/upload/2022/03/213-5dc910a93e87433786a962a3e6bafc4c.png" alt="213.png"></li></ol><h2 id="jdk和jre"><a class="anchor" href="#jdk和jre">#</a> JDK 和 JRE</h2><p><strong>JDK：</strong><br>Java 2 SDK (Development Kit) 包含：JRE 的超集，包含编译器和调试器等用于程序开发的文件</p><p><strong>JRE：</strong><br>Java Runtime Environment (JRE) 包含：Java 虚拟机、库函数、运行 Java 应用程序和 Applet 所必须文件<br><strong>Java 运行环境的三项主要功能：</strong></p><ul><li>加载代码：由 class loader 完成；</li><li>校验代码：由 bytecode verifier 完成；</li><li>执行代码：由 runtime interpreter 完成。</li></ul><p><strong>区别和联系：</strong></p><ul><li>sdk（也就是 jdk）是 jre 的超集，是在 jre 的基础上增加了编译器及其他一些开发工具。</li><li>jre 就是 java 运行时环境， 包括了 jvm 和其它一些 java 核心 api 任何一台电脑， 只有安装了 jre 才可以运行 java 程序.</li></ul><p>如果只是要运行 JAVA 程序， 之需要 JRE 就可以。JRE 通常非常小， 也包含了 JVM.<br>如果要开发 JAVA 程序， 就需要安装 JDK。</p><h2 id="认识jvm"><a class="anchor" href="#认识jvm">#</a> 认识 JVM</h2><p>（JAVA Virtual Machine）<br>JVM 是一种规范，可以使用软件来实现，也可使用硬件来实现，一个虚拟的用于执行 bytecodes 字节码的计算机。同时定义了指令集、寄存器集、结构栈、垃圾收集堆、内存区域。</p><p>JVM 负责将 java 字节码解释运行，边解释边运行，速度可能受到一定的影响。JAVA 提供了另一种解释运行的方法 JIT（just in time），可以一次解释完，再运行特定平台上的机器码，高级的 JIT 可以只分析热点代码，并将这些代码转成本地机器码，然后将结果缓存，下次直接从内存调用，提高了执行 JAVA 代码的效率，同时实现了跨平台、可移植的功能。</p><ol><li>JVM 是指在一台计算机上由软件或硬件模拟的计算机；它类似一个小巧而高效的 CPU。</li><li>byte-code 代码是与平台无关的是虚拟机的机器指令。</li><li>java 字节代码运行的两种方式:<br>（1）方式 interpreter (解释)<br>（2）Just-in-time (即时编译): 由代码生成器将字节代码转换成本机的机器代码，然后可以以较高速度执行。<br><strong>JAVA 的跨平台</strong>实现的核心是不同平台使用不同的虚拟机。不同操作系统虚拟机不同。Java 虚拟机机制屏蔽了底层运行平台的差别，从而实现 “一次编译，随处运行”。</li></ol><h1 id="配置java语言环境"><a class="anchor" href="#配置java语言环境">#</a> 配置 java 语言环境</h1><ul><li>可以参考 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/dahuaji/p/15953078.html">各种编程语言环境配置方法</a></li></ul><h1 id="快捷键"><a class="anchor" href="#快捷键">#</a> 快捷键</h1><table><thead><tr><th>快捷键</th><th>操作</th></tr></thead><tbody><tr><td>Ctrl+D</td><td>复制当前行到下一行</td></tr><tr><td>psvm</td><td><code>Public static void main(String[] args)&#123;&lt;br&gt;&#125;</code></td></tr><tr><td>sout</td><td><code>System.out.println()</code></td></tr></tbody></table><h1 id="基础语法"><a class="anchor" href="#基础语法">#</a> 基础语法</h1><ul><li><strong>注释</strong></li></ul><pre><code class="language-Java">//单行注释
+/*
+  多行注释
+  多行注释
+*/
+/*
+  *文档注释
+  *用于生产API文档
+*/
+</code></pre><ul><li><strong>标识符</strong><ul><li>有的标识符都应该以字母（A-Z 或者 a-z）, 美元符（$）、下划线（_）<strong>开始</strong></li><li>首字符之后可以是字母（A-Z 或者 a-z）, 美元符（$）、下划线（_）或数字的任何字符组合</li><li>不能使用关键字作为变量名或方法名。</li><li>标识符大小写敏感的 。</li><li>合法标识符举例：age、$salary、_value、__1_value</li></ul></li></ul><h2 id="数据类型"><a class="anchor" href="#数据类型">#</a> 数据类型</h2><p>java 是强类型语言，变量使用前需要先定义。<br>java 的数据类型分为：基本类型 (primitive type) 和引用类型 (reference type)<br>引用数据类型也称为复合数据类型。</p><p><img loading="lazy" data-src="https://secure2.wostatic.cn/static/eV1jwRB41qqViFeFAVPi8h/image.png" alt=""></p><p><img loading="lazy" data-src="https://secure2.wostatic.cn/static/jxR5ao2BUbWZzodgV6eEhX/image.png" alt=""></p><ul><li><strong>整型拓展</strong></li></ul><pre><code class="language-Java">//二进制：
+int 0b0101
+//八进制：
+int 023124
+//十六进制：
+int 0xA68B
+</code></pre><ul><li><p><strong>浮点型拓展</strong></p><p>浮点类型 float 和 double 在计算时会出现误差<br>如果需要进行不产生舍入误差的精确数字计算，需要使用 BigDecimal 类。</p><p>误差愿意：由于字长有限，浮点数能够精确表示的数是有限的，因而也是<strong>离散</strong>的。浮点数一般都存在舍入误差，很多数字无法精确表示，其结果只能是接近，但不等于；二进制浮点数不能精确的表示 0.1,0.01,0.001 这样 10 的负次幂。并不是所有的小数都能可以精确的用二进制浮点数表示。</p><p>浮点使用时需要注意：<br>1. 默认是 double 型<br>2. 很多误差，进行精确计算时需要用 BigDecimal 类<br>3. 避免<strong>比较</strong>时使用浮点数</p></li></ul><h2 id="类型转化"><a class="anchor" href="#类型转化">#</a> 类型转化</h2><pre><code class="language-Java">低 ------------------------------------&gt; 高
+转换从低级到高级（根据容量来看）
+byte,short,char—&gt; int —&gt; long—&gt; float —&gt; double
+</code></pre><p>需要注意：</p><ol><li>不能对布尔类型（boolean）进行转化</li><li>不能把对象类型转化为不相关类的对象</li><li>把容量大的类型转化为容量小的类型必须使用强制类型转化</li><li>转化过程中会出现溢出或者精度损失。</li></ol><ul><li><p><strong>自动类型转化</strong></p><p>容量小的数据类型可以自动转换为容量大的数据类型。</p></li><li><p><strong>强制类型转化</strong></p><p>语法格式： <code>(type)var</code> 例如： <code>a=(int)x</code></p></li><li><p><strong>常见问题</strong></p><ul><li>操作比较大的数时，要留意是否溢出，尤其是整数操作时</li></ul></li></ul><pre><code class="language-Java">public static void main(String[] args) &#123;
+int money = 1000000000; //10亿
+int years = 20;
+int total = money*years; //返回的是负数
+long total1 = money*years; //返回的仍然是负数。默认是int，因此结果会转成
+int值，再转成long。但是已经发生了数据丢失
+long total2 = money*((long)years); //先将一个因子变成long，整个表达式发
+生提升。全部用long来计算。
+System.out.println(total);
+System.out.println(total1);
+System.out.println(total2);
+&#125;
+</code></pre><ul><li>L 和 l 的问题：<ol><li>不要命名名字为 l 的变量</li><li>long 类型使用大写 L 不要用小写。</li></ol></li></ul><pre><code class="language-Java">public static void main(String[] args) &#123;
+int l = 2;
+long a = 23451l;
+System.out.println(l+1); //3
+System.out.println(a); //23451
+&#125;
+</code></pre><ul><li><strong>JDK 新特性</strong></li></ul><pre><code class="language-Java">//# 二进制整数
+int a = 0b0101;
+//# 下划线分隔符
+int b = 1_2234_5678;//（输出依然为122345678）
+</code></pre><h1 id="变量常量"><a class="anchor" href="#变量常量">#</a> 变量，常量</h1><p>Java 变量在使用前需要先声明，才能为其分配相应长度的储存单元，声明格式为：</p><pre><code class="language-Java">type varName [=value] [&#123;,varName[=value]&#125;] ；
+//数据类型 变量名 = 值；可以使用逗号隔开来声明多个同类型变量。
+-------------------------------------
+//演示不同变量的定义
+int a, b, c;
+// 声明三个int型整数：a、 b、c
+int d = 3, e = 4, f = 5; // 声明三个整数并赋予初值
+byte z = 22;
+// 声明并初始化 z
+String s = &quot;runoob&quot;; // 声明并初始化字符串 s
+double pi = 3.14159; // 声明了双精度浮点型变量 pi
+char x = 'x';
+// 声明变量 x 的值是字符 'x'。
+
+</code></pre><ul><li><strong>变量作用域</strong><ul><li>局部变量（ <code>lacal variable</code> ）：类的方法中的变量。<br>方法或语句块内部定义的变量。生命周期是从声明位置开始到”}” 为止。<br>在使用前必须先声明和初始化 (赋初值)。<br>局部变量没有默认值，所以局部变量被声明后，必须经过初始化，才可以使用。</li><li>类变量（静态变量： <code>static variable</code> ）：独立于方法之外的变量，用 static 修饰。<br>从属于类，生命周期伴随类始终，从类加载到卸载。<br>如不初始化，自动初始化为默认值（数值型变量初始化成 0 或 0.0，字符型变量的初始化值是 16 位的 0，布尔型默认是 false）</li></ul></li></ul><pre><code class="language-Java">public class Employee &#123;
+//salary是静态的私有变量
+private static double salary;
+// DEPARTMENT是一个常量
+public static final String DEPARTMENT = &quot;开发人员&quot;;
+public static void main(String[] args)&#123;
+salary = 10000;
+System.out.println(DEPARTMENT+&quot;平均工资:&quot;+salary);
+&#125;
+&#125;
+</code></pre><ul><li>实例变量（成员变量： <code>member variable</code> ）：独立于方法之外的变量，不过没有 <code>static</code> 修饰。<br>方法外部、类的内部定义的变量。从属于对象，生命周期伴随对象始终。<br>如不自行初始化，自动初始化为默认值（数值型变量初始化成 0 或 0.0，字符型变量的初始化值是 16 位的 0，布尔型默认是 false）</li></ul><pre><code class="language-Java">public class Test &#123;
+// 这个实例变量对子类可见
+public String name;
+// 私有变量，仅在该类可见
+private double salary;
+&#125;
+</code></pre><ul><li><p><strong>常量</strong></p><p>常量 (Constant)：初始化 (initialize) 后不能再改变值！不会变动的值。</p></li></ul><pre><code class="language-Java">final static double PI=3.14;
+static final double PI=3.1415;
+</code></pre><ul><li><p><strong>变量命名规范</strong></p><p>1. 所有变量、方法、类名：见名知意<br>2. 类成员变量：首字母小写和驼峰原则 : <code>monthSalary</code><br>3. 局部变量：首字母小写和驼峰原则<br>4. 常量：大写字母和下划线： <code>MAX_VALUE</code><br>5. 类名：首字母大写和驼峰原则: <code>Man</code> , <code>GoodMan</code><br>6. 方法名：首字母小写和驼峰原则: <code>run()</code> , <code>runRun()</code></p></li></ul><h1 id="运算"><a class="anchor" href="#运算">#</a> 运算</h1><table><thead><tr></tr></thead><tbody><tr><td>算术运算符:</td><td>+，-，，/，%，++，--</td></tr><tr><td>赋值运算符</td><td>=</td></tr><tr><td>关系运算符:</td><td>&gt;，&lt;，&gt;=，&lt;=，==，!=, instanceof</td></tr><tr><td>逻辑运算符:</td><td colspan="2">&amp;&amp;，</td><td>，!</td></tr><tr><td>位运算符:</td><td>&amp;，</td><td>，^，~ ， &gt;&gt;，&lt;&lt;，&gt;&gt;&gt; (了解！！！)</td></tr><tr><td>条件运算符</td><td>？：</td></tr><tr><td>扩展赋值运算符:</td><td>+=，-=，=，/=</td></tr></tbody></table><ul><li><p><strong>不同数据类型的计算</strong></p><p><strong>整数运算</strong>：如果两个变量有一个为 <code>long</code> ，则结果为 <code>long</code> 。<br>没有 <code>long</code> 时，无论变量时 <code>shot</code> , <code>byte</code> 结果都是 <code>int</code></p><p>** 浮点运算：** 如果两个操作数有一个为 <code>double</code> , 则结果为 <code>double</code></p></li></ul><h3 id="一元运算符"><a class="anchor" href="#一元运算符">#</a> <strong>一元运算符</strong></h3><p>** 自增（++）自减（--）** 运算符是一种特殊的算术运算符</p><pre><code class="language-Java">    public static void main(String[] args) &#123;
+        int a=3;
+        int b=a++;//先赋值后自增
+        int c=++a;//先自增后赋值
+        System.out.println(+b+&quot; &quot;+c);
+    &#125;
+</code></pre><h3 id="逻辑运算符"><a class="anchor" href="#逻辑运算符">#</a> <strong>逻辑运算符</strong></h3><pre><code class="language-Java">public static void main(String[] args) &#123;
+boolean a = true;
+boolean b = false;
+System.out.println(&quot;a &amp;&amp; b = &quot; + (a&amp;&amp;b));//逻辑与运算
+System.out.println(&quot;a || b = &quot; + (a||b) );//逻辑或运算
+System.out.println(&quot;!(a &amp;&amp; b) = &quot; + !(a &amp;&amp; b));
+&#125;
+</code></pre><p>采用<strong>短路</strong>的方式。从左到右运算，如果可以确定真值情况则不会再继续运算下去。 <code>|</code> 和 <code>&amp;</code> 也可以进行逻辑运算，但是不会进行短路运算。</p><pre><code class="language-Java">public static void main(String[] args)&#123;
+int a = 5;//定义一个变量；
+boolean b = (a&lt;4)&amp;&amp;(a++&lt;10);
+System.out.println(&quot;使用短路逻辑运算符的结果为&quot;+b);
+System.out.println(&quot;a的结果为&quot;+a);
+&#125;
+</code></pre><h3 id="位运算符"><a class="anchor" href="#位运算符">#</a> 位运算符</h3><pre><code class="language-Java">A = 0011 1100
+B = 0000 1101
+-----------------
+A&amp;b = 0000 1100
+A | B = 0011 1101
+A ^ B = 0011 0001
+~A= 1100 0011
+</code></pre><table><thead><tr><th>操作符</th><th>描述</th></tr></thead><tbody><tr><td>&amp;</td><td>如果相对应位都是 1，则结果为 1，否则为 0</td></tr><tr><td>如果相对应位都是 0，则结果为 0，否则为 1</td></tr><tr><td>^</td><td>如果相对应位值相同，则结果为 0，否则为 1</td></tr><tr><td>~</td><td>按位取反运算符翻转操作数的每一位，即 0 变成 1，1 变成 0。</td></tr><tr><td>&lt;&lt;</td><td>按位左移运算符。左操作数按位左移右操作数指定的位数。</td></tr><tr><td>&gt;&gt;</td><td>按位右移运算符。左操作数按位右移右操作数指定的位数。</td></tr><tr><td>&gt;&gt;&gt;</td><td>按位右移补零操作符。左操作数的值按右操作数指定的位数右移，移动得到的空位以零填充。</td></tr></tbody></table><ul><li><p><strong>字符串连接符</strong></p><p>“+” 运算符两侧的操作数中只要有一个是字符串 (String) 类型，系统会自动将另一个操作数转换为字符串然后再进行连接。</p></li></ul><pre><code class="language-Java">//字符串
+String s1=&quot;Hello world!&quot;;
+String s2=1+&quot;&quot;; //转换成String
+//int
+int c = 12;
+System.out.println(&quot;c=&quot; + c);
+//拓展
+System.out.println(&quot;&quot;+1+1);//前者先转化为字符型，再进行字符串连接
+System.out.println(1+1+&quot;&quot;);//后者先进行数字运算，再转化为字符型
+</code></pre><ul><li><p><strong>三元运算符</strong></p><p>语法格式： <code>x ? y : z</code><br>其中 x 为 boolean 类型表达式，先计算 x 的值，若为 true，则整个三目运算的结果为表达式 y 的值，否则整个运算结果为表达式 z 的值。</p></li></ul><pre><code class="language-Java">public static void main(String[] args) &#123;
+int score = 80;
+String type = score &lt; 60 ? &quot;不及格&quot; : &quot;及格&quot;;
+System.out.println(&quot;type= &quot; + type);
+&#125;
+</code></pre><h1 id="带标签的continue与break"><a class="anchor" href="#带标签的continue与break">#</a> 带标签的 continue 与 break</h1><pre><code class="language-Java">public class Test3 &#123;
+  public static void main(String[] args) &#123;
+    for(int i=0;i&lt;5;i++) &#123;
+      Label_out:
+      for(int j=0;j&lt;5;j++) &#123;
+        if(j==3) &#123;
+          break Label_out;
+        &#125;
+        System.out.print(&quot;&quot;+i+j+&quot; &quot;);      
+      &#125;
+      System.out.println();
+    &#125;
+    System.out.println(&quot;This is end&quot;);
+  &#125;
+&#125;/* 
+输出：
+00 01 02 
+10 11 12 
+20 21 22 
+30 31 32 
+40 41 42 
+This is end
+ 
+把break Label_out改为continue Label_out时输出：
+00 01 02 04 
+10 11 12 14 
+20 21 22 24 
+30 31 32 34 
+40 41 42 44 
+This is end
+*/
+</code></pre><h1 id="增强-for-循环"><a class="anchor" href="#增强-for-循环">#</a> 增强 for 循环</h1><p>类似与 python 中的 for 循环，但是必须要声明一个变量。</p><pre><code class="language-Java">//增强for循环语法格式
+for(声明语句 : 表达式)
+&#123;
+   //代码句子
+&#125;
+</code></pre><p>** 声明语句：** 声明的局部变量，必须和数组元素的类型匹配。其作用域限定在循环语句块，值与此时数组元素值相等。<br>** 表达式：** 表达式是要访问的数组名，或者是返回值为数组的方法。</p><pre><code class="language-Java">public class demofor&#123;
+  public static void main(String []args)&#123;
+    int []numbers=&#123;1,2,3,4,5,6&#125;;
+    for (int x:numbers)&#123;
+      System.out.println(x);
+    &#125;
+  &#125;
+&#125;
+</code></pre><h1 id="包机制"><a class="anchor" href="#包机制">#</a> 包机制</h1><p>当定义了多个类的时候，可能会发生类名的重复问题。<br>在 java 中采用包机制处理定义类名的冲突问题。</p><ul><li><p><strong>包的作用</strong></p><p>1、把相似或相关的类或接口组织在同个包中，方便查找和使用。<br>2、像文件夹一样，包采用树形目录存储。一个包中的类名不同，不同的包中类名可以相同，同时调用不同包中相同类名的类时，需要加上包名来区别。<br>3、包限定了访问权限，有包访问权限才能访问包中的类。</p></li></ul><pre><code class="language-Java">//包语句的语法格式为：
+package pkg1[．pkg2[．pkg3…]];
+//例如：
+package net.java.util;
+public class Something&#123;   //  对应的路径保存在net/java/util/Something.java中
+...
+&#125;
+
+</code></pre><ul><li><p><strong>关键字</strong></p><p>为了使用一个包中的成员，需要在使用前导入该包<br>类文件中可以包含任意数量的 import 声明。import 声明必须在包声明之后，类声明之前。</p></li></ul><pre><code class="language-Java">//语法格式为：
+import package1[.package2…].(classname|*);
+//举例：
+import com.baidu.baike
+</code></pre><p>为了编码规范，参考一下文档《阿里巴巴 Java 开发手册终极版 v1.3.0》</p><h1 id="定义方法"><a class="anchor" href="#定义方法">#</a> 定义方法</h1><p>JAVA 中只有值传递</p><pre><code class="language-Java">修饰符 返回值类型 方法名(参数类型 参数名)&#123;
+...
+方法体
+...
+return 返回值;
+&#125;
+</code></pre><ul><li>** 修饰符：** 修饰符，可选。告诉编译器如何调用该方法。定义了该方法的访问类型。</li><li><strong>返回值类型 ：<strong>方法可能会返回值。returnValueType 是方法返回值的数据类型。有些方法执行所需的操作，但没有返回值。在这种情况下，returnValueType 是关键字</strong> void</strong>。</li><li>** 方法名：** 是方法的实际名称。方法名和参数表共同构成方法签名。</li><li>** 参数类型：** 参数像是一个占位符。当方法被调用时，传递值给参数。这个值被称为实参或变量。参数列表是指方法的参数类型、顺序和参数的个数。参数是可选的，方法可以不包含任何参数。</li><li>** 方法体：** 方法体包含具体的语句，定义该方法的功能。</li></ul><p><img loading="lazy" data-src="https://secure2.wostatic.cn/static/9vv1hwir7ZCRHjrT4idVD1/D53C92B3-9643-4871-8A72-33D491299653.jpg" alt=""></p><h2 id="举例"><a class="anchor" href="#举例">#</a> 举例：</h2><pre><code class="language-Java">//定义一个方法，返回两个数的最大值
+public static int max(int num1, int num2) &#123;
+  return num1 &gt; num2 ? num1 : num2;
+&#125;
+
+//方法的调用：
+int larger = max(30, 40);
+
+</code></pre><h2 id="方法重载"><a class="anchor" href="#方法重载">#</a> 方法重载</h2><p>如果你调用 max 方法时传递的是 int 型参数，则 int 型参数的 max 方法就会被调用；如果传递的是 double 型参数，则 double 类型的 max 方法体会被调用，这叫做方法重载；</p><h2 id="命令行传递参数"><a class="anchor" href="#命令行传递参数">#</a> 命令行传递参数</h2><pre><code class="language-Java">public class CommondLine&#123;
+  public static void main(String []args)&#123;
+    for(int i=0;i&lt;args.length;i++)&#123;
+      System.out.println(&quot;args[&quot;+i+&quot;]:&quot;+args[i])
+      &#125;  &#125;
+&#125;
+</code></pre><pre><code class="language-Java">$ java CommondLine.java
+$ javac CommondLine this is a commond
+//结果：
+arg[0]:this
+args[1]:is
+args[2]:a
+args[3]:command
+
+</code></pre><h2 id="可变参数"><a class="anchor" href="#可变参数">#</a> 可变参数</h2><pre><code class="language-Java">public static void main(String args[])&#123;
+//调用可变参数的方法
+  printMax(34,3,3,2,56.5);
+  printMax(newdouble[]&#123;1,2,3&#125;);
+  &#125;
+public static void printMax(double...numbers)&#123;
+  if(numbers.length==0)&#123;
+    System.out.println(&quot;No argument passed&quot;);
+    return; 
+  &#125;
+  
+  double result=numbers[0];
+//排序！
+  for(int i=1;i&lt;numbers.length;i++)&#123;
+    if(numbers[i]&gt; result)&#123;
+      result=numbers[i];&#125;
+    &#125;
+   System.out.println(&quot;The max value is&quot;+result);
+&#125;
+
+</code></pre><h1 id="选择结构"><a class="anchor" href="#选择结构">#</a> 选择结构</h1><pre><code class="language-Java">switch语句格式：
+switch(表达式) &#123;
+    case 值1：
+        语句体1;
+        break;
+    case 值2：
+        语句体2;
+        break;
+        …//你可以有任意数量的case语句
+    default：  //default语句表示所有情况都不匹配的时候，就执行该处的内容，和if语句的else相似。
+        语句体n+1;
+        break;    &#125;
+
+</code></pre><p>执行流程：<br>如果匹配成功的 case 没有 break ，从当前 case 开始，后续 case 的值都会输出，如果后续的 case 语句块有 break 语句则会跳出判断。<br>如果所有的 case 都和表达式的值不匹配，执行 default 语句，然后结束。</p><h1 id="scanner类"><a class="anchor" href="#scanner类">#</a> Scanner 类</h1><p>使用该命令前需要先导包 <code>import java.util.Scanner</code> 位置在 class 之上。</p><pre><code class="language-Java">public static void main(String[] args) &#123;
+  Scanner scan = new Scanner(System.in);
+  // 从键盘接收数据
+  // nextLine方式接收字符串
+System.out.println(&quot;nextLine方式接收：&quot;);
+  // 判断是否还有输入
+if (scan.hasNextLine()) &#123;
+  String str2 = scan.nextLine();
+  System.out.println(&quot;输入内容：&quot; + str2);
+  &#125;
+  scan.close();
+&#125;
+
+</code></pre><p>next () 与 nextline () 的区别<br>next ()：<br>不能得到带空格的字符串，会自动去掉<br>nextline ():<br>以 Enter 为结束符，可以接受空白</p><ul><li><p><strong>其他方法</strong></p><p>如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx () 方法进行验证，再使用 nextXxx () 来读取：</p><p>如果输入单个字符，需要用 <code>char word = input.next().charAt(0)</code></p></li></ul><h1 id="math-类"><a class="anchor" href="#math-类">#</a> Math 类</h1><pre><code class="language-Java">public class Test &#123;  
+    public static void main (String []args)  
+    &#123;  
+        System.out.println(&quot;90 度的正弦值：&quot; + Math.sin(Math.PI/2));  
+        System.out.println(&quot;0度的余弦值：&quot; + Math.cos(0));  
+        System.out.println(&quot;60度的正切值：&quot; + Math.tan(Math.PI/3));  
+        System.out.println(&quot;1的反正切值： &quot; + Math.atan(1));  
+        System.out.println(&quot;π/2的角度值：&quot; + Math.toDegrees(Math.PI/2));  
+        System.out.println(Math.PI);  
+    &#125;  
+&#125;
+</code></pre><table><thead><tr><th>方法</th><th>描述</th></tr></thead><tbody><tr><td><a target="_blank" rel="noopener" href="https://www.runoob.com/java/number-xxxvalue.html">xxxValue()</a></td><td>将 Number 对象转换为 xxx 数据类型的值并返回</td></tr><tr><td><a target="_blank" rel="noopener" href="https://www.runoob.com/java/number-equals.html">equals()</a></td><td>判断 number 对象是否与参数相等。</td></tr><tr><td><a target="_blank" rel="noopener" href="https://www.runoob.com/java/number-tostring.html">toString()</a></td><td>以字符串形式返回值。</td></tr><tr><td>parseInt()</td><td>将字符串解析为 int 类型。</td></tr><tr><td><a target="_blank" rel="noopener" href="https://www.runoob.com/java/number-random.html">random()</a></td><td>返回一个随机数。</td></tr></tbody></table><h1 id="character-类"><a class="anchor" href="#character-类">#</a> Character 类</h1><p>Character 类提供了一系列方法来操纵字符。你可以使用 Character 的构造方法创建一个 Character 类对象，例如：<br><code>Character ch = new Character('a');</code></p><table><thead><tr><th>方法</th><th>描述</th></tr></thead><tbody><tr><td>isLetter()</td><td>是否为字母</td></tr><tr><td>isDigit()</td><td>是否是一个数字字符</td></tr><tr><td><a target="_blank" rel="noopener" href="https://www.runoob.com/java/character-iswhitespace.html">isWhitespace()</a></td><td>是否是一个空白字符</td></tr><tr><td><a target="_blank" rel="noopener" href="https://www.runoob.com/java/character-isuppercase.html">isUpperCase()</a></td><td>是否是大写字母</td></tr><tr><td><a target="_blank" rel="noopener" href="https://www.runoob.com/java/character-islowercase.html">isLowerCase()</a></td><td>是否是小写字母</td></tr><tr><td><a target="_blank" rel="noopener" href="https://www.runoob.com/java/character-touppercase.html">toUpperCase()</a></td><td>指定字母的大写形式</td></tr><tr><td><a target="_blank" rel="noopener" href="https://www.runoob.com/java/character-tolowercase.html">toLowerCase</a>()</td><td>指定字母的小写形式</td></tr><tr><td><a target="_blank" rel="noopener" href="https://www.runoob.com/java/character-tostring.html">toString</a>()</td><td>返回字符的字符串形式，字符串的长度仅为 1</td></tr></tbody></table><h1 id="string-类"><a class="anchor" href="#string-类">#</a> String 类</h1><p>创建一个对象 <code>String str2=new String(&quot;Runoob&quot;);</code></p><div class="tags"><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B-Java/" rel="tag"><i class="ic i-tag"></i>计算机编程 | Java</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-eye"></i></span><span class="text">Total Views: </span><span class="waline-pageview-count" id="twikoo_visitors" data-path="/2022/03/05/java-self-study-notes/">Loading...</span></span><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">Edited on </span><time title="Modified: 2022-03-16 23:05:16" itemprop="dateModified" datetime="2022-03-16T23:05:16+09:00">2022-03-16</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>Donate</button><p>Give me a cup of [coffee]~(￣▽￣)~*</p><div id="qr"><div><img loading="lazy" data-src="/assets/wechatpay.png" alt="Huaji WeChat Pay"><p>WeChat Pay</p></div><div><img loading="lazy" data-src="/assets/alipay.png" alt="Huaji Alipay"><p>Alipay</p></div></div></div><div id="copyright"><ul><li class="author"><strong>Post author: </strong>Huaji<i class="ic i-at"><em>@</em></i>Huaji Blog</li><li class="link"><strong>Post link: </strong><a href="https://candle233.github.io/2022/03/05/java-self-study-notes/" title="Java自学笔记">https://candle233.github.io/2022/03/05/java-self-study-notes/</a></li><li class="license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> unless stating additionally.</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2022/03/05/programming-env-setup/" rel="prev" itemprop="url" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2025&#x2F;03&#x2F;23&#x2F;VuSkPXEdxhypjGv.png" title="编程语言环境配置"><span class="type">Previous Post</span><span class="category"><i class="ic i-flag"></i>计算机科学CS</span><h3>编程语言环境配置</h3></a></div><div class="item right"><a href="/2022/03/05/data-structure-algo-linear-list/" rel="next" itemprop="url" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2025&#x2F;03&#x2F;23&#x2F;6srAhfHqDwMoBve.png" title="数据结构与算法笔记——线性表"><span class="type">Next Post</span><span class="category"><i class="ic i-flag"></i>计算机科学CS</span><h3>数据结构与算法笔记——线性表</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="Contents"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#java%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%88%E6%9C%AC"><span class="toc-number">1.</span> <span class="toc-text">Java 的三大版本：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jdk%E5%92%8Cjre"><span class="toc-number">2.</span> <span class="toc-text">JDK 和 JRE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A4%E8%AF%86jvm"><span class="toc-number">3.</span> <span class="toc-text">认识 JVM</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEjava%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83"><span class="toc-number"></span> <span class="toc-text">配置 java 语言环境</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number"></span> <span class="toc-text">快捷键</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="toc-number"></span> <span class="toc-text">基础语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B%E8%BD%AC%E5%8C%96"><span class="toc-number">2.</span> <span class="toc-text">类型转化</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F"><span class="toc-number"></span> <span class="toc-text">变量，常量</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%90%E7%AE%97"><span class="toc-number"></span> <span class="toc-text">运算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E5%85%83%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">0.1.</span> <span class="toc-text">一元运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">0.2.</span> <span class="toc-text">逻辑运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">0.3.</span> <span class="toc-text">位运算符</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%A6%E6%A0%87%E7%AD%BE%E7%9A%84continue%E4%B8%8Ebreak"><span class="toc-number"></span> <span class="toc-text">带标签的 continue 与 break</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A2%9E%E5%BC%BA-for-%E5%BE%AA%E7%8E%AF"><span class="toc-number"></span> <span class="toc-text">增强 for 循环</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8C%85%E6%9C%BA%E5%88%B6"><span class="toc-number"></span> <span class="toc-text">包机制</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95"><span class="toc-number"></span> <span class="toc-text">定义方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BE%E4%BE%8B"><span class="toc-number">1.</span> <span class="toc-text">举例：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD"><span class="toc-number">2.</span> <span class="toc-text">方法重载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0"><span class="toc-number">3.</span> <span class="toc-text">命令行传递参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">可变参数</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84"><span class="toc-number"></span> <span class="toc-text">选择结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#scanner%E7%B1%BB"><span class="toc-number"></span> <span class="toc-text">Scanner 类</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#math-%E7%B1%BB"><span class="toc-number"></span> <span class="toc-text">Math 类</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#character-%E7%B1%BB"><span class="toc-number"></span> <span class="toc-text">Character 类</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#string-%E7%B1%BB"><span class="toc-number"></span> <span class="toc-text">String 类</span></a></li></div><div class="related panel pjax" data-title="Related"><ul><li><a href="/2022/03/05/pointer-summary/" rel="bookmark" title="指针简述">指针简述</a></li><li><a href="/2022/03/05/programming-env-setup/" rel="bookmark" title="编程语言环境配置">编程语言环境配置</a></li><li class="active"><a href="/2022/03/05/java-self-study-notes/" rel="bookmark" title="Java自学笔记">Java自学笔记</a></li><li><a href="/2022/03/05/data-structure-algo-linear-list/" rel="bookmark" title="数据结构与算法笔记——线性表">数据结构与算法笔记——线性表</a></li><li><a href="/2022/03/05/data-structure-algo-intro/" rel="bookmark" title="数据结构与算法笔记——绪论">数据结构与算法笔记——绪论</a></li><li><a href="/2022/03/05/python-self-study-basics/" rel="bookmark" title="Python自学基础知识">Python自学基础知识</a></li><li><a href="/2022/03/06/python-error-notes/" rel="bookmark" title="Python错题笔记">Python错题笔记</a></li><li><a href="/2022/03/11/c-java-array-comparison/" rel="bookmark" title="C语言数组与Java数组">C语言数组与Java数组</a></li><li><a href="/2022/03/12/dynamic-memory-auto-free/" rel="bookmark" title="当程序退出后，动态申请的内存会自动释放吗？">当程序退出后，动态申请的内存会自动释放吗？</a></li><li><a href="/2022/03/13/foreign-cs-course-resources/" rel="bookmark" title="国外大学计算机课程资源收集">国外大学计算机课程资源收集</a></li><li><a href="/2022/03/18/java-formatted-output-methods/" rel="bookmark" title="Java格式化输出的四种方法">Java格式化输出的四种方法</a></li><li><a href="/2022/03/19/python-exercises/" rel="bookmark" title="一些Python课后练习题">一些Python课后练习题</a></li><li><a href="/2022/04/01/python-easygui-module/" rel="bookmark" title="Python中的easygui模块">Python中的easygui模块</a></li><li><a href="/2022/04/10/cpp-output-bool-cforbool/" rel="bookmark" title="C++输出cout布尔类型">C++输出cout布尔类型</a></li></ul></div><div class="overview panel" data-title="Overview"><div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="Huaji" src="/assets/avatar.png"><p class="name" itemprop="name">Huaji</p><div class="description" itemprop="description"></div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">30</span><span class="name">posts</span></a></div><div class="item categories"><a href="/categories/"><span class="count">4</span><span class="name">categories</span></a></div><div class="item tags"><a href="/tags/"><span class="count">14</span><span class="name">tags</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/candle233" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;candle233"><i class="ic i-github"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>Home</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2022/03/05/data-structure-algo-linear-list/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2022/03/05/programming-env-setup/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>Random Posts</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2022/03/13/gpa-prisoner-dilemma-top-cn-universities/">绩点为王：中国顶尖高校年轻人的囚徒困境</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E7%A1%AC%E4%BB%B6software-hardware/" title="In软件与硬件software&amp;hardware">软件与硬件software&hardware</a></div><span><a href="/2022/03/26/java-convert-wechat-silk-to-mp3/">java将微信语音的silk文件转换成MP3</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6CS/" title="In计算机科学CS">计算机科学CS</a></div><span><a href="/2022/03/05/data-structure-algo-linear-list/">数据结构与算法笔记——线性表</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E6%95%B0%E5%AD%A6Mathe/" title="In数学Mathe">数学Mathe</a></div><span><a href="/2022/03/05/probability-statistics-notes/">概率论与数理统计笔记</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6CS/" title="In计算机科学CS">计算机科学CS</a></div><span><a href="/2022/03/05/python-self-study-basics/">Python自学基础知识</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E7%A1%AC%E4%BB%B6software-hardware/" title="In软件与硬件software&amp;hardware">软件与硬件software&hardware</a></div><span><a href="/2022/04/23/common-api-summary/">常用api接口汇总</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E6%95%B0%E5%AD%A6Mathe/" title="In数学Mathe">数学Mathe</a></div><span><a href="/2022/03/13/undergraduate-math-courses/">大学本科数学专业课程</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6CS/" title="In计算机科学CS">计算机科学CS</a></div><span><a href="/2022/03/05/programming-env-setup/">编程语言环境配置</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6CS/" title="In计算机科学CS">计算机科学CS</a></div><span><a href="/2022/03/19/python-exercises/">一些Python课后练习题</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/22/test/">test</a></span></li></ul></div><div class="rpost pjax"><h2>Recent Comments</h2><ul class="leancloud-recent-comment" id="new-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2022 -<span itemprop="copyrightYear">2025</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">Huaji @ Welcome!</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="Symbols count total">419k words</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="Reading time total">6:21</span></div><div class="powered-by">Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+    ispost: true,
+    path: `2022/03/05/java-self-study-notes/`,
+    favicon: {
+        show: `(●´3｀●) Here we go again.`,
+        hide: `(´Д｀) It's a disaster!`
+    },
+    search: {
+        placeholder: "Search for Posts",
+        empty: "We didn't find any results for the search: ${query}",
+        stats: "${hits} results found in ${time} ms"
+    },
+    nocopy: "false",
+    copyright: `Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.`,
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    fancybox: true,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">Article Timeliness Alert</span><br>This is an article published {{publish}} days ago and last updated {{updated}} days ago. Some information may have changed, so please be careful to screen it.</p></div>`,
+    quiz: {
+        choice: `Multiple Choice`,
+        multiple: `Multiple Answer`,
+        true_false: `True/False`,
+        essay: `Questions`,
+        gap_fill: `Gap Filling`,
+        mistake: `Wrong Answer`
+    },
+    ignores: [
+        (uri) => uri.includes('#'),
+        (uri) => new RegExp(LOCAL.path + '$').test(uri),
+            []
+    ]
+};</script><script src="https://s4.zstatic.net/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO&#x2F;+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn&#x2F;6Z&#x2F;hRTt8+pR6L4N2" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha384-Zm+UU4tdcfAm29vg+MTbfu&#x2F;&#x2F;q5B&#x2F;lInMbMCr4T8c9rQFyOv6PlfQYpB5wItcXWe7" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" integrity="sha384-TOxsBplaL96&#x2F;QDWPIUg+ye3v89qSE3s22XNtJMmCeZEep3cVDmXy1zEfZvVv+y2m" crossorigin="anonymous" fetchpriority="high"></script><script src="/js/siteInit.js?v=0.4.25" type="module" fetchpriority="high" defer></script></body></html><!-- rebuild by hrmmi -->

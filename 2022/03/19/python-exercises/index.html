@@ -1,0 +1,551 @@
+<!-- build time:Mon Mar 24 2025 00:41:41 GMT+0900 (Japan Standard Time) --><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="alternate" href="/rss.xml" title="Huaji Blog" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="Huaji Blog" type="application/atom+xml"><link rel="alternate" type="application/json" title="Huaji Blog" href="https://candle233.github.io/feed.json"><link rel="preconnect" href="https://s4.zstatic.net"><link rel="preconnect" href="https://at.alicdn.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CFredericka%20the%20Great:400,400italic,700,700italic%7CNoto%20Serif%20JP:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CInconsolata:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/app.css?v=0.4.25"><link rel="modulepreload" href="/js/chunk-BVA3IQCV.js"><link rel="modulepreload" href="/js/chunk-D2KGL5SQ.js"><link rel="modulepreload" href="/js/chunk-GDFXZ3XX.js"><link rel="modulepreload" href="/js/chunk-WIQECBEN.js"><link rel="modulepreload" href="/js/chunk-WSB2NAPC.js"><link rel="modulepreload" href="/js/chunk-ZPJJ7MUW.js"><link rel="modulepreload" href="/js/comments-W26T4RI2.js"><link rel="modulepreload" href="/js/copy-tex-TXYSSFBT.js"><link rel="modulepreload" href="/js/index.esm-AHVJOIO5.js"><link rel="modulepreload" href="/js/post-N4BGB3K5.js"><link rel="modulepreload" href="/js/quicklink-MKCXBDPA.js"><link rel="modulepreload" href="/js/search-7ZTNFNLX.js"><link rel="modulepreload" href="/js/siteInit.js"><link rel="modulepreload" href="/js/waline-NVSVNCZW.js"><link rel="stylesheet" href="/css/comments-F4ZGS7LD.css" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/siteInit.css" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/waline-IDNZKML2.css" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="preload" href="https://s2.loli.net/2025/03/23/f4yE67GLFkcMoRI.png" as="image" fetchpriority="high"><link rel="preload" href="https://s2.loli.net/2025/03/23/YByQ2o19MFegjvd.png" as="image" fetchpriority="high"><link rel="preload" href="https://s2.loli.net/2025/03/23/YfS9b7ivGBcPqEI.png" as="image" fetchpriority="high"><link rel="preload" href="https://s2.loli.net/2025/03/23/D7xQMNCmis3wP9y.png" as="image" fetchpriority="high"><link rel="preload" href="https://s2.loli.net/2025/03/23/9Ej81drVMDANTxz.png" as="image" fetchpriority="high"><link rel="preload" href="https://s2.loli.net/2025/03/23/6srAhfHqDwMoBve.png" as="image" fetchpriority="high"><meta name="keywords" content="计算机编程 | Python"><link rel="canonical" href="https://candle233.github.io/2022/03/19/python-exercises/"><title>一些Python课后练习题</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">一些Python课后练习题</h1><div class="meta"><span class="item" title="Created: 2022-03-19 21:53:15"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">Posted on</span><time itemprop="dateCreated datePublished" datetime="2022-03-19T21:53:15+09:00">2022-03-19</time></span><span class="item" title="Symbols count in article"><span class="icon"><i class="ic i-pen"></i></span><span class="text">Symbols count in article</span><span>16k</span><span class="text">words</span></span><span class="item" title="Reading time"><span class="icon"><i class="ic i-clock"></i></span><span class="text">Reading time</span><span>15 mins.</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="Toggle navigation bar"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Welcome!</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><ul><li class="item" style="background-image:url(&quot;https://s2.loli.net/2025/03/23/f4yE67GLFkcMoRI.png&quot;)"></li><li class="item" style="background-image:url(&quot;https://s2.loli.net/2025/03/23/YByQ2o19MFegjvd.png&quot;)"></li><li class="item" style="background-image:url(&quot;https://s2.loli.net/2025/03/23/YfS9b7ivGBcPqEI.png&quot;)"></li><li class="item" style="background-image:url(&quot;https://s2.loli.net/2025/03/23/D7xQMNCmis3wP9y.png&quot;)"></li><li class="item" style="background-image:url(&quot;https://s2.loli.net/2025/03/23/9Ej81drVMDANTxz.png&quot;)"></li><li class="item" style="background-image:url(&quot;https://s2.loli.net/2025/03/23/6srAhfHqDwMoBve.png&quot;)"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemlistelement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">Home</a></span><i class="ic i-angle-right"></i><span class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6CS/" itemprop="item" rel="index" title="In计算机科学CS"><span itemprop="name">计算机科学CS<meta itemprop="position" content="0"></span></a></span></div><article class="post block" itemscope itemtype="http://schema.org/Article" lang="en"><link itemprop="mainEntityOfPage" href="https://candle233.github.io/2022/03/19/python-exercises/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.png"><meta itemprop="name" content="Huaji"><meta itemprop="description" content=", "></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Huaji Blog"></span><div class="body md" itemprop="articleBody"><h1 id="python课后题"><a class="anchor" href="#python课后题">#</a> Python 课后题</h1><ol><li><p>Python 的主要特点及应用领域有哪些？<br>人工智能、数据分析、办公自动化、运维、科学计算、Web 应用开发、桌面软件、游戏开发、爬虫开发</p></li><li><p>print 打印输出个人信息， 包括姓名、年龄、性别、薪资等。</p><pre><code class="language-Python">print('姓名：Allen, ','年龄：18, ','性别：男, ','薪资：100K')
+
+</code></pre></li><li><p>Python 代码注释的方式都有哪些？</p><ul><li><p>单行注释</p><ul><li>使用#</li></ul></li><li><p>多行注释</p><ul><li>使用 ''' 或者 &quot;&quot;&quot;</li></ul></li></ul></li><li><p>掌握变量的作用，以及使用的方式？<br>变量的作用：存储数据，可通过变量更方便的存储和找到数据</p></li></ol><ul><li><p><strong>规则如下：</strong></p><ul><li><p>由数字、字母、下划线组成</p></li><li><p>不能数字开头</p></li><li><p>不能使用内置关键字</p></li><li><p>严格区分大小写</p></li></ul></li><li><p><strong>规范如下：</strong></p><ul><li><p>见名知义。</p></li><li><p>大驼峰：即每个单词首字母都大写， 例如：My Name</p></li><li><p>小驼峰：第二个 (含) 以后的单词首字母大写， 例如：my Name</p></li><li><p>下划线：例如：my_name</p></li></ul></li></ul><ol start="5"><li><p>掌握变量与关键字的区别？<br>变量是自己的定义的标识符<br>关键字就是系统已经占用了的标识符</p></li><li><p>练习并掌握 Python 常用的数据类型与运算符？</p><pre><code class="language-Python">#算数运算符
+print(1+100)
+---------------------------------------
+#赋值运算符
+num = 1
+print(num)
+num1, float1, str1 = 10, 0.5, 'hello world'
+print(num1)
+print(float1)
+print(str1)
+a = b = 10
+print(a)
+print(b)
+a = 100
+a += 1
+# 输出101 a = a + 1,最终a = 100 + 1
+print(a)
+b = 2
+b *= 3
+# 输出6 b = b * 3,最终b = 2 * 3
+print(b)
+c = 10
+c += 1 + 2
+# 输出13, 先算运算符右侧1 + 2 = 3， c += 3 , 推导出c = 10 + 3
+print(c)
+------------------------------------------
+#比较运算符
+a = 7
+b = 5
+print(a == b) # False
+print(a != b) # True
+print(a &lt; b) # False
+print(a &gt; b) # True
+print(a &lt;= b) # False
+print(a &gt;= b) # True
+------------------------------------------
+#逻辑运算符
+a = 1
+b = 2
+c = 3
+print((a &lt; b) and (b &lt; c)) # True
+print((a &gt; b) and (b &lt; c)) # False
+print((a &gt; b) or (b &lt; c)) # True
+print(not (a &gt; b)) # True
+
+</code></pre></li><li><pre><code class="language-Python">#使⽤字符串复制，⽤计算机打印出“爱你⼀百遍”，打印100次。
+print('爱你⼀百遍\n'*100)
+#将”to be or not to be”字符串倒序输出。
+print(&quot;to be or not to be&quot;[::-1])
+#将”ChinaChinaChina”字符串中所有的s输出。
+print(&quot;ChinaChinaChina&quot;[::5])
+
+</code></pre></li><li><p>以下是⼀部番的多个评分 [8, 8.5, 9, 9.5, 8.2, 10, 6, 8.8 ,9.2, 8.2]<br>查找里面的没有没有满分 10 以及 0 分<br>去掉最高分与最低分输出结果</p><pre><code class="language-Python">score = [ 8, 8.5, 9, 9.5, 8.2, 10, 6, 8.8 ,9.2, 8.2 ]
+print(0 in score)
+print(10 in score)
+
+# score.remove(0) 因为没有，所以不写了
+score.remove(10)
+print(score)
+</code></pre></li><li><p>编写程序存储 3 个番的信息，其中保存 番名，评分，发布时间</p><pre><code class="language-Python">movies =[
+ &#123;&quot;name&quot;:&quot;⼀⼈之下&quot;,&quot;score&quot;:9.5,&quot;date&quot;:&quot;2020-01-01&quot;&#125;,
+ &#123;&quot;name&quot;:&quot;凡⼈修仙录&quot;,&quot;score&quot;:9,&quot;date&quot;:&quot;2020-01-02&quot;&#125;,
+ &#123;&quot;name&quot;:&quot;灵笼&quot;,&quot;score&quot;:8.5,&quot;date&quot;:&quot;2020-01-03&quot;&#125;
+]
+</code></pre></li><li><p>条件语句有⼏种结构？分别是哪些？</p><ul><li>单分⽀</li></ul><pre><code class="language-Python">if 条件表达式:
+ 语句体
+ ......
+</code></pre><ul><li>双分支</li></ul><pre><code class="language-Python">if 条件表达式:
+ 语句体
+ ......
+else:
+ 语句体
+ ......
+</code></pre><ul><li>多分⽀</li></ul><pre><code class="language-Python">if 条件表达式:
+ 语句体
+elif 条件2：
+ 语句体
+......
+else:
+ 语句体
+</code></pre></li><li><p>输⼊⼀个点的坐标 (x,y)，判断其所在的象限。</p><pre><code class="language-Python">x = float(input('请输⼊x轴：'))
+y = float(input('请输⼊y轴：'))
+rs = [1,2,3,4]
+if x &gt; 0:
+   rs.remove(2)
+   rs.remove(3)
+   if y &gt; 0:
+     rs.remove(4)
+   else:
+     rs.remove(1)
+else:
+   rs.remove(1)
+   rs.remove(4)
+   if y &gt; 0 :
+     rs.remove(3)
+   else:
+     rs.remove(2)
+print(f'这是第&#123;rs[0]&#125;象限')
+</code></pre></li><li><p>输⼊⼀个分数。分数在 0-100 之间。90 以上是 A,80 以上是 B，70 以上是 C，60 以上是 D。60 以下是 E。</p><pre><code class="language-Python">score = int(input('请输⼊成绩：'))
+if score &gt;= 90:
+ print('成绩为：A')
+elif score &gt;=80:
+ print('成绩为：B')
+elif score &gt;=70:
+ print('成绩为：C')
+elif score &gt;= 60:
+ print('成绩为：D')
+else:
+ print('成绩为：E')
+</code></pre></li><li><p>利⽤ while 循环，计算 1-100 之间数字的累加和；计算 1-100 之间偶数的累加和，计算 1-100 之间奇数的累加和。</p><pre><code class="language-Python">i = 1
+count = 0
+while i &lt;= 100:
+   count += i
+   i += 1
+print(f'1-100之间数据的累加和:&#123;count&#125;')
+i = 1
+count = 0
+while i &lt;= 100:
+   count += i
+   i += 2
+print(f'1-100之间数据的奇数累加和:&#123;count&#125;')
+i = 2
+count = 0
+while i &lt;= 100:
+   count += i
+   i += 2
+print(f'1-100之间数据的偶数累加和:&#123;count&#125;')
+</code></pre></li><li><p>利⽤ for 循环，计算 1-100 之间数字的累加和；计算 1-100 之间偶数的累加和，计算 1-100 之间奇数的累加和。</p><pre><code class="language-Python">count = 0
+for i in range(1,101):
+  count += i
+print(f'1-100之间数据的累加和:&#123;count&#125;')
+
+count = 0
+for i in range(1,101,2):
+  count += i
+print(f'1-100之间数据的累加和:&#123;count&#125;')
+
+count = 0
+for i in range(2,101,2):
+  count += i
+print(f'1-100之间数据的累加和:&#123;count&#125;')
+</code></pre></li><li><p>打印如下图案。<br>0 0 0 0 0<br>1 1 1 1 1<br>2 2 2 2 2<br>3 3 3 3 3<br>4 4 4 4 4</p><pre><code class="language-Python"># ⽅法⼀
+print('0 0 0 0 0')
+print('1 1 1 1 1')
+print('2 2 2 2 2')
+print('3 3 3 3 3')
+print('4 4 4 4 4')
+# ⽅法⼆
+print('0 '*5)
+print('1 '*5)
+print('2 '*5)
+print('3 '*5)
+print('4 '*5)
+# ⽅法三
+for i in range(5):
+  print(f'&#123;i&#125; '*5
+
+</code></pre></li><li><p>产⽣ 100 以内的随机数，直到随机数为 66 时终⽌循环</p><pre><code class="language-Python">from random import randint
+
+while True:
+   num = randint(0,100)
+   print(f'随机数为:&#123;num&#125;')
+   if 66 == num:
+     print('随机到了66，程序结束！！')
+     break
+
+</code></pre></li><li><p>把 100~200 之间不能被 6 整除的数输出，并且每⾏输出 10 个</p><pre><code class="language-Python">from random import randint
+count = 0
+for i in range(100,201):
+   if i % 6 != 0:
+     count += 1
+     if count == 10:
+       print(i)
+       count = 0
+       continue
+     print(i,end=' ')
+</code></pre></li><li><p>定义⼀个函数实现：计算年龄的并返回的功能。⽐如：传递出⽣年 2000, 今年份 2050 函数返回 50 的结果（提示：记的⽤数据类型转换 int (num)）</p><pre><code class="language-Python">def show_age(b,y):
+   return int(y) - int(b)
+def start():
+   b = input('请输⼊出⽣年份:')
+   y = input('请输⼊今年的年份:')
+   print(f'计算年龄为:&#123;show_age(b,y)&#125;')
+</code></pre></li><li><p>定义⼀个函数实现：查找数据容器中是否存在评分超过 9.5 分的番剧并返回超过 9.5 分的番剧信息。</p><pre><code class="language-Python">ms =[
+ &#123;'name':'名侦探柯南','score':9.8&#125;,
+ &#123;'name':'⻤灭之刃','score':9.1&#125;,
+ &#123;'name':'⽆能⼒者娜娜','score':9.4&#125;,
+]
+Print(“正在查找符合要求的番剧：”)
+def show_movie(m):
+   rs = []
+   for info in m:
+     print(f'番名:&#123;info.get(&quot;name&quot;)&#125; 评分:&#123;info.get(&quot;score&quot;)&#125;')
+     if info.get(&quot;score&quot;)&gt;=9.5:
+       rs.append(info)
+   print(f'符合要求的有:&#123;rs&#125;')
+</code></pre></li><li><p>定义⼀个学⽣类，包含：id、name、score、age 四个属性。包含：study () ⽅法</p><pre><code class="language-Python">class Student:
+   def __init__(self,id:int = None,name:str = None,age:int = None) -&gt;
+None:
+   self.id = id
+   self.name = name
+   self.age = age
+   
+   def study() -&gt; None:
+     print(&quot;学习使我快乐~~~&quot;)
+</code></pre></li><li><p>调⽤创建好的学⽣类。创建两个学⽣对象：</p><ol><li>id：1001，name：Allen，score：90，age：18</li></ol><pre><code class="language-Python">s1 = Student()
+s1.id = 1001
+s1.name = 'Allen'
+s1.score = 90
+s1.age = 18
+</code></pre><ol start="2"><li>Id：1002，name：宝⼉姐、score：100，age：20</li></ol><pre><code class="language-Python">s2 = Student(1002,'宝⼉姐',100,20)
+</code></pre><ol start="3"><li>调⽤其中⼀个对象的 study () ⽅法</li></ol><pre><code class="language-Python">s1.study()
+s2.study()
+</code></pre></li><li><p>创建模块 person 模块，在模块中创建 student 类，包含属性 name、age ⽅法 show_me</p><pre><code class="language-Python">## person.py
+class Student:
+   def __init__(self,name:str = None,age:int = None) -&gt; None:
+     self.name = name
+     self.age = age
+ 
+ def show_me() -&gt; None:
+   print(f&quot;⼤家好~我是&#123;self.name&#125; ,今年&#123;self.age&#125;岁啦~&quot;)
+</code></pre></li><li><p>创建 person_test.py ⽂件 调⽤ person 中的类，创建对象 stu . 调⽤ show_me ⽅法</p><pre><code class="language-Python">## person_test.py
+from person import Student
+stu = Student('宝⼉姐',100)
+stu.show_me()
+</code></pre></li><li><p>下载模块 requests 模块</p><pre><code class="language-Python">#在 shell 中执⾏
+pip install requests
+</code></pre></li><li><p>创建⽂件 text.txt，并输⼊ 100 ⾏ 192.168.1.0-50 的 IP 地址。<br>例如： - 192.168.1.1 - 192.168.1.6 - 192.168.1.32</p><pre><code class="language-Python">from random import randint
+ 
+ f = open('text.txt','w',encoding='utf-8')
+ for i in range(100):
+   f.write(f'192.168.1.&#123;randint(0,50)&#125;\n')
+ f.close()
+</code></pre></li><li><p>统计 text.txt ⽂件中 192.168.1.6 的 IP 出现频率</p><pre><code class="language-Python">f = open('text.txt','r',encoding='utf-8')
+ count = 0
+ while True:
+   info = f.readline()
+   if info == '192.168.1.6\n':
+     count += 1
+   if info == '':
+     break
+ f.close()
+ print(count)
+</code></pre></li><li><p>创建名称为 video 的 excel ⽂件中，并将⾃⼰喜欢的 5 个番剧保存到⽂件中。其中包括，番名、主⻆名称、评分等级、出品出家</p><pre><code class="language-Python">from openpyxl import Workbook
+ # 实例化
+ wb = Workbook()
+ # 激活 worksheet
+ ws = wb.active
+ # 番名、主⻆名称、评分等级、出品出家
+ rows = [
+ ['不良⼈','李星云','9.8','国产'],
+ ['堀与宫村','堀京⼦','9.6','⽇本'],
+ ['咒术回战','⻁杖','9.7','⽇本'],
+ ['⻄游记之再世妖王','孙悟空','8.3','国产'],
+ ['冰雪⼤作战','苏菲','9.1','加拿⼤'],
+ ]
+ for row in rows:
+   ws.append(row)
+   wb.save('video.xlsx')
+</code></pre></li><li><p>分别统计 video 的表格中评分超过 9 分的番剧有多少，出品国家为国产的有多少。并记录第⼆个 sheet 表中</p><pre><code class="language-Python">from openpyxl import load_workbook
+   wb = load_workbook('video.xlsx')
+   ws = wb.active
+   rows = ws.rows
+   f = 0 # 记录：评分超9的
+   g = 0 # 记录：国产数量
+   for row in rows:
+     print(row[2].value,'===',row[3].value)
+     if float(row[2].value) &gt;=9.0:
+       f +=1
+     if row[3].value =='国产':
+       g +=1
+ tb = wb.create_sheet('统计')
+ tb.append(['评分超9的',f])
+ tb.append(['国产',g])
+ wb.save('video.xlsx')
+</code></pre></li><li><p>通过 Python 创建 excel 数据，并把多个数据加⼊到 excel 中第⼀个 sheet 中：数据举例</p><pre><code class="language-Python">阿凡达 9.3 2021
+五尺天涯 8.9 2021
+你好，李焕英 9.5 2021
+猫和⽼⿏ 7.9 2021
+唐⼈街探案3 8.8 2021
+新神榜：哪吒重⽣ 8.7 2021
+送你⼀朵⼩红花 8.6 2020
+温暖的抱抱 9 2020
+⻤灭之刃 剧场版 ⽆限列⻋篇 8.6 2020
+晴雅集 9.7 2020
+战狼2 9.2 2020
+我和我的家乡 9.3 2020
+---------------------
+def homework13_1():
+   from openpyxl import Workbook
+   # 实例化
+   wb = Workbook()
+  # 激活 worksheet
+   ws = wb.active
+  data = [
+   ['阿凡达',9.3,2021],
+   ['五尺天涯',8.9,2021],
+   ['你好，李焕英',9.5,2021],
+   ['猫和⽼⿏',7.9,2021],
+   ['唐⼈街探案3',8.8,2021],
+   ['新神榜：哪吒重⽣',8.7,2021],
+   ['送你⼀朵⼩红花',8.6,2020],
+   ['温暖的抱抱',9,2020],
+   ['⻤灭之刃 剧场版 ⽆限列⻋篇',8.6,2020],
+   ['晴雅集',9.7,2020],
+   ['战狼2',9.2,2020],
+   ['我和我的家乡',9.3,2020]
+   ]
+   for d in data:
+     ws.append(d)
+   wb.save('homework13.xlsx')
+homework13_1()
+
+</code></pre></li><li><p>根据年限将 sheet1 表中的数据进⾏分割，分别不同的年的数据保存到相对应的年 sheet 表中。</p><pre><code class="language-Python">def homework13_2():
+ from openpyxl import load_workbook
+ wb = load_workbook('homework13.xlsx')
+ ws = wb.active
+ rows = ws.rows
+ 
+ sh_2020 = wb.create_sheet('2020')
+ sh_2021 = wb.create_sheet('2021')
+ 
+ for row in rows:
+   if row[2].value == 2020:
+     sh_2020.append([d.value for d in row])
+   else:
+     sh_2021.append([d.value for d in row])
+ wb.save('homework13.xlsx')
+ '''
+ [d.value for d in row] 的功能等于下⾯代码
+ d =[]
+ for t in row:
+   d.append(t.value)
+ '''
+homework13_2()
+</code></pre></li><li><p>将 movie excel ⽂件中数据进⾏合并保存当前 excel ⽂件中的 all_movie sheet 表中</p><pre><code class="language-Python">def homework14_1():
+ from openpyxl import load_workbook
+ # 实例化
+ wb = load_workbook('movies14.xlsx')
+ # 激活 worksheet
+ sh_2021 = wb[&quot;2021&quot;]
+ sh_2020 = wb[&quot;2020&quot;]
+ sh_2019 = wb[&quot;2019&quot;]
+ ws = wb.create_sheet('all_movie')
+ for sh in [sh_2021,sh_2020,sh_2019]:
+ for row in sh:
+ ws.append([r.value for r in row])
+ wb.save('movies14.xlsx')
+</code></pre></li><li><p>将 movie excel ⽂件中数据进⾏合并保存新的 excel ⽂件中，名为 all_movie</p><pre><code class="language-Python">def homework14_2():
+   from openpyxl import load_workbook
+   # 实例化
+   wb = load_workbook('movies14.xlsx')
+   # 激活 worksheet
+   sh_2021 = wb[&quot;2021&quot;]
+   sh_2020 = wb[&quot;2020&quot;]
+   sh_2019 = wb[&quot;2019&quot;]
+   
+   ws = wb.create_sheet('all_movie')
+   
+   for sh in [sh_2021,sh_2020,sh_2019]:
+     for row in sh:
+       ws.append([r.value for r in row])
+   wb.save('movies14_new.xlsx')
+</code></pre></li><li><p>根据肯定的思路，将 t1、t2、t3 excel ⽂件进⾏合并，并保存为名为 t_all 的 excel ⽂件。</p><pre><code class="language-Python">def homework15_1():
+ from openpyxl import load_workbook,Workbook
+ new_wb = Workbook()
+ sh = new_wb.active
+ for filename in ['t1_15.xlsx','t2_15.xlsx','t3_15.xlsx']:
+ # 实例化
+ wb = load_workbook(filename)
+ # 激活 worksheet
+ ws = wb.active
+ for row in ws.rows:
+ sh.append([r.value for r in row])
+ new_wb.save('t_all.xlsx')
+</code></pre></li><li><p>思考问题：是否可以再次简化课上代码</p><pre><code class="language-Python">'''
+简化代码的思路:
+1. 重复的代码可以使⽤循环替代
+2. 可以适当的使⽤列表⽣成器
+'''
+</code></pre></li><li><p>根据课上的思路，将 z1、z2、z3 excel ⽂件进⾏合并并汇总每⼀类播放量的总和，并保存为名为 z_all 的 excel ⽂件</p><pre><code class="language-Python">def homework16_1():
+   from openpyxl import load_workbook,Workbook
+   new_wb = Workbook()
+   sh = new_wb.active
+   all_count= []
+   for filename in ['z1.xlsx','z2.xlsx','z3.xlsx']:
+       # 实例化
+       wb = load_workbook(filename)
+       # 激活 worksheet
+       ws = wb.active
+       # 记录总记录数
+       count = 0
+       for row in ws.rows:
+         row_values = [r.value for r in row]
+         row_values.append(wb.sheetnames[0])
+         sh.append(row_values)
+         count += int(row_values[1])
+       all_count.append([wb.sheetnames[0],count])
+     
+     sh2 = new_wb.create_sheet('汇总')
+     for r in all_count:
+         sh2.append(r)
+     new_wb.save('z_all.xlsx')
+</code></pre></li><li><p>通过 Python 创建 excel 数据，并保存多个数据，具体样式如下：<br><img loading="lazy" data-src="image/image.png" alt=""></p><pre><code class="language-Python">import enum
+from openpyxl import Workbook
+from openpyxl.styles import Font,PatternFill
+from random import randint
+wb = Workbook()
+sh = wb.active
+title = Font(name='微软雅⿊', size=14, color='FF3030', bold=True)
+yue = Font(name='微软雅⿊', size=10, bold=True)
+fill = PatternFill('solid',fgColor='AEEEEE')
+sh.append(['⽉份','销售1组','销售2组','销售3组','销售4组','销售5组'])
+
+for n in range(1,13):
+   tmp = [randint(50,150) for i in range(5)]
+   tmp.insert(0,f'&#123;n&#125;⽉')
+   sh.append(tmp)
+s = ['A','B','C','D','E','F']
+for i,row in enumerate(sh.rows):
+   for j,cell in enumerate(row):
+     if i == 0:
+       cell.font = title
+     else:
+       if j == 0:
+         cell.font = yue
+       else:
+         if i%2 == 0:
+           cell.fill = fill
+ sh.column_dimensions[s[j]].width =12
+ 
+wb.save('home_work17.xlsx')
+
+</code></pre></li><li><p>编写脚本，从⽂件 test.xlsx 中提供数据。根据每⼀条数据分别⽣成当⽉账单信息</p><pre><code class="language-Python">def homework17_1():
+   from openpyxl import load_workbook,Workbook
+   wb = load_workbook('test.xlsx')
+   ws = wb.active
+   
+   title = None
+   for index,row in enumerate(ws.rows):
+     if index == 0:
+       title = [r.value for r in row]
+       continue
+   info = [r.value for r in row]
+   new_wb = Workbook()
+   new_sh = new_wb.active
+   new_sh.append(title)
+   new_sh.append(info)
+   new_wb.save(f'&#123;info[0]&#125;.xlsx')
+</code></pre></li><li><p>国家对于关于防⽌未成年⼈沉迷⽹络游戏的有个通知，⼯作⽇不得出来 1.5 ⼩时，节假⽇不得超过时 3 ⼩时。根据防沉迷规定，统计每个⼯作⽇的超出规定的游戏时间</p><pre><code class="language-Python">def homework19_1():
+ from openpyxl import load_workbook,Workbook
+ wb = load_workbook('test_19.xlsx')
+ ws = wb.active
+ 
+ title = None
+ for index,row in enumerate(ws.rows):
+   if index == 0:
+     ws.cell(index+1,5).value = '汇总'
+   else:
+     if row[1].value &lt; 18 and row[3].value &lt; 6:
+       ws.cell(index+1,5).value = 90 - row[2].value
+ wb.save(f'test_19.xlsx')
+</code></pre></li><li><p>根据防沉迷规定，统计每个节假⽇的超出规定的游戏时间</p><pre><code class="language-Python">def homework19_2():
+   from openpyxl import load_workbook,Workbook
+   wb = load_workbook('test_19.xlsx')
+   ws = wb.active
+   title = None
+   for index,row in enumerate(ws.rows):
+     if index == 0:
+       ws.cell(index+1,5).value = '汇总'
+   else:
+     if row[1].value &lt; 18 and row[3].value &gt;= 6:
+       ws.cell(index+1,5).value = 120 - row[2].value
+   wb.save(f'test_19.xlsx')
+</code></pre><pre><code class="language-Python">from openpyxl import load_workbook,Workbook
+wb = load_workbook('test_19.xlsx')
+ws = wb.active
+title = None
+for index,row in enumerate(ws.rows):
+   if index == 0:
+     ws.cell(index+1,5).value = '汇总'
+     else:
+       if row[1].value &lt; 18 and row[3].value &gt;= 6:
+         ws.cell(index+1,5).value = 120 - row[2].value
+         if row[1].value &lt; 18 and row[3].value &lt; 6:
+           ws.cell(index+1,5).value = 90 - row[2].value
+           wb.save(f'test_19.xlsx')
+
+</code></pre></li><li><p>编写程序实现，在⽂件 tmp.xlsx 中找出重复的数据有哪些</p><pre><code class="language-Python">def homework20_1():
+   from openpyxl import load_workbook
+   wb = load_workbook('file/tmp.xlsx')
+   ws = wb.active
+   
+   data = []
+   multiple_index = []
+   for index,row in enumerate(ws.rows):
+     id = row[0].value
+     if id in data:
+       multiple_index.append(index+1)
+     else:
+       data.append(id)
+   print(f'第&#123;multiple_index&#125;⾏是重复数据')
+</code></pre></li><li><p>将重复的进⾏删除，并剩余数据保存到新的 sheet 表中</p></li></ol><pre><code class="language-Python">def homework20_2():
+   from openpyxl import load_workbook
+   wb = load_workbook('tmp.xlsx')
+   ws = wb.active
+   new_ws = wb.create_sheet('duplicate')
+   data = []
+   for row in ws.rows:
+     id = row[0].value
+     if id not in data:
+       data.append(id)
+       new_ws.append([r.value for r in row])
+   wb.save('tmp.xlsx')
+</code></pre><div class="tags"><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B-Python/" rel="tag"><i class="ic i-tag"></i>计算机编程 | Python</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-eye"></i></span><span class="text">Total Views: </span><span class="waline-pageview-count" id="twikoo_visitors" data-path="/2022/03/19/python-exercises/">Loading...</span></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>Donate</button><p>Give me a cup of [coffee]~(￣▽￣)~*</p><div id="qr"><div><img loading="lazy" data-src="/assets/wechatpay.png" alt="Huaji WeChat Pay"><p>WeChat Pay</p></div><div><img loading="lazy" data-src="/assets/alipay.png" alt="Huaji Alipay"><p>Alipay</p></div></div></div><div id="copyright"><ul><li class="author"><strong>Post author: </strong>Huaji<i class="ic i-at"><em>@</em></i>Huaji Blog</li><li class="link"><strong>Post link: </strong><a href="https://candle233.github.io/2022/03/19/python-exercises/" title="一些Python课后练习题">https://candle233.github.io/2022/03/19/python-exercises/</a></li><li class="license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> unless stating additionally.</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2022/03/18/java-formatted-output-methods/" rel="prev" itemprop="url" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2025&#x2F;03&#x2F;23&#x2F;6srAhfHqDwMoBve.png" title="Java格式化输出的四种方法"><span class="type">Previous Post</span><span class="category"><i class="ic i-flag"></i>计算机科学CS</span><h3>Java格式化输出的四种方法</h3></a></div><div class="item right"><a href="/2022/03/26/java-convert-wechat-silk-to-mp3/" rel="next" itemprop="url" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2025&#x2F;03&#x2F;23&#x2F;YfS9b7ivGBcPqEI.png" title="java将微信语音的silk文件转换成MP3"><span class="type">Next Post</span><span class="category"><i class="ic i-flag"></i>软件与硬件software&hardware</span><h3>java将微信语音的silk文件转换成MP3</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="Contents"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#python%E8%AF%BE%E5%90%8E%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">Python 课后题</span></a></li></ol></div><div class="related panel pjax" data-title="Related"><ul><li><a href="/2022/03/05/pointer-summary/" rel="bookmark" title="指针简述">指针简述</a></li><li><a href="/2022/03/05/programming-env-setup/" rel="bookmark" title="编程语言环境配置">编程语言环境配置</a></li><li><a href="/2022/03/05/java-self-study-notes/" rel="bookmark" title="Java自学笔记">Java自学笔记</a></li><li><a href="/2022/03/05/data-structure-algo-linear-list/" rel="bookmark" title="数据结构与算法笔记——线性表">数据结构与算法笔记——线性表</a></li><li><a href="/2022/03/05/data-structure-algo-intro/" rel="bookmark" title="数据结构与算法笔记——绪论">数据结构与算法笔记——绪论</a></li><li><a href="/2022/03/05/python-self-study-basics/" rel="bookmark" title="Python自学基础知识">Python自学基础知识</a></li><li><a href="/2022/03/06/python-error-notes/" rel="bookmark" title="Python错题笔记">Python错题笔记</a></li><li><a href="/2022/03/11/c-java-array-comparison/" rel="bookmark" title="C语言数组与Java数组">C语言数组与Java数组</a></li><li><a href="/2022/03/12/dynamic-memory-auto-free/" rel="bookmark" title="当程序退出后，动态申请的内存会自动释放吗？">当程序退出后，动态申请的内存会自动释放吗？</a></li><li><a href="/2022/03/13/foreign-cs-course-resources/" rel="bookmark" title="国外大学计算机课程资源收集">国外大学计算机课程资源收集</a></li><li><a href="/2022/03/18/java-formatted-output-methods/" rel="bookmark" title="Java格式化输出的四种方法">Java格式化输出的四种方法</a></li><li class="active"><a href="/2022/03/19/python-exercises/" rel="bookmark" title="一些Python课后练习题">一些Python课后练习题</a></li><li><a href="/2022/04/01/python-easygui-module/" rel="bookmark" title="Python中的easygui模块">Python中的easygui模块</a></li><li><a href="/2022/04/10/cpp-output-bool-cforbool/" rel="bookmark" title="C++输出cout布尔类型">C++输出cout布尔类型</a></li></ul></div><div class="overview panel" data-title="Overview"><div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="Huaji" src="/assets/avatar.png"><p class="name" itemprop="name">Huaji</p><div class="description" itemprop="description"></div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">30</span><span class="name">posts</span></a></div><div class="item categories"><a href="/categories/"><span class="count">4</span><span class="name">categories</span></a></div><div class="item tags"><a href="/tags/"><span class="count">14</span><span class="name">tags</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/candle233" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;candle233"><i class="ic i-github"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>Home</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2022/03/26/java-convert-wechat-silk-to-mp3/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2022/03/18/java-formatted-output-methods/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>Random Posts</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6CS/" title="In计算机科学CS">计算机科学CS</a></div><span><a href="/2022/03/05/python-self-study-basics/">Python自学基础知识</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6CS/" title="In计算机科学CS">计算机科学CS</a></div><span><a href="/2022/03/12/dynamic-memory-auto-free/">当程序退出后，动态申请的内存会自动释放吗？</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E6%95%B0%E5%AD%A6Mathe/" title="In数学Mathe">数学Mathe</a></div><span><a href="/2022/04/23/us-students-learn-math-easier/">美国学生学得数学比我们简单?</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6CS/" title="In计算机科学CS">计算机科学CS</a></div><span><a href="/2022/04/10/cpp-output-bool-cforbool/">C++输出cout布尔类型</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6CS/" title="In计算机科学CS">计算机科学CS</a></div><span><a href="/2022/04/01/python-easygui-module/">Python中的easygui模块</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6CS/" title="In计算机科学CS">计算机科学CS</a></div><span><a href="/2022/03/13/foreign-cs-course-resources/">国外大学计算机课程资源收集</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E6%97%A5%E8%AF%ADJapanese/" title="In日语Japanese">日语Japanese</a></div><span><a href="/2022/03/17/distinguish-loanwords-vs-chinese/">如何区分何语词于汉语词</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6CS/" title="In计算机科学CS">计算机科学CS</a></div><span><a href="/2022/03/05/pointer-summary/">指针简述</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E6%95%B0%E5%AD%A6Mathe/" title="In数学Mathe">数学Mathe</a></div><span><a href="/2022/03/06/math-induction/">数学归纳法</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6CS/" title="In计算机科学CS">计算机科学CS</a></div><span><a href="/2022/03/18/java-formatted-output-methods/">Java格式化输出的四种方法</a></span></li></ul></div><div class="rpost pjax"><h2>Recent Comments</h2><ul class="leancloud-recent-comment" id="new-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2022 -<span itemprop="copyrightYear">2025</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">Huaji @ Welcome!</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="Symbols count total">419k words</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="Reading time total">6:21</span></div><div class="powered-by">Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+    ispost: true,
+    path: `2022/03/19/python-exercises/`,
+    favicon: {
+        show: `(●´3｀●) Here we go again.`,
+        hide: `(´Д｀) It's a disaster!`
+    },
+    search: {
+        placeholder: "Search for Posts",
+        empty: "We didn't find any results for the search: ${query}",
+        stats: "${hits} results found in ${time} ms"
+    },
+    nocopy: "false",
+    copyright: `Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.`,
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    fancybox: true,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">Article Timeliness Alert</span><br>This is an article published {{publish}} days ago and last updated {{updated}} days ago. Some information may have changed, so please be careful to screen it.</p></div>`,
+    quiz: {
+        choice: `Multiple Choice`,
+        multiple: `Multiple Answer`,
+        true_false: `True/False`,
+        essay: `Questions`,
+        gap_fill: `Gap Filling`,
+        mistake: `Wrong Answer`
+    },
+    ignores: [
+        (uri) => uri.includes('#'),
+        (uri) => new RegExp(LOCAL.path + '$').test(uri),
+            []
+    ]
+};</script><script src="https://s4.zstatic.net/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO&#x2F;+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn&#x2F;6Z&#x2F;hRTt8+pR6L4N2" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha384-Zm+UU4tdcfAm29vg+MTbfu&#x2F;&#x2F;q5B&#x2F;lInMbMCr4T8c9rQFyOv6PlfQYpB5wItcXWe7" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" integrity="sha384-TOxsBplaL96&#x2F;QDWPIUg+ye3v89qSE3s22XNtJMmCeZEep3cVDmXy1zEfZvVv+y2m" crossorigin="anonymous" fetchpriority="high"></script><script src="/js/siteInit.js?v=0.4.25" type="module" fetchpriority="high" defer></script></body></html><!-- rebuild by hrmmi -->
